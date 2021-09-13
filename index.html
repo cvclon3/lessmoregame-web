@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Document</title>
+
+</head>
+<body>
+
+    <div class="main">      <!-- GAME -->
+        <div>
+            <label for="scriptBox">
+                <input id="scriptBox" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                maxlength = "4" onkeypress="return runScript(event)"/>
+            </label>
+        </div>
+        
+    </div>
+
+    <div class="result">
+        <p id="result"></p>
+    </div>      <!-- GAME -->
+
+    <button id="end" class="restart" onclick="location.reload()">RESTART</button>       <!-- END -->
+
+<script src="script.js"></script>
+</body>
+</html>
